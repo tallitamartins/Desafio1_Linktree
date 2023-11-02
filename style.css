@@ -6,13 +6,12 @@ body{
     background-size: cover;
     text-align: center;
     font-family: 'Silkscreen', sans-serif;
-    /* Space Grotesk Font */
 }
 
 #perfil{
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    margin: 10px 0 35px;
 }
 
 #container {
@@ -25,6 +24,8 @@ body{
 
 h1 {
     font-size: 26px;
+    line-height: 0;
+    margin: 30px;
 }
 
 p{
@@ -37,7 +38,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 270px;
+    top: 170px;
     background-color: #fff;
     width: 371px;
     height: 45px;
@@ -51,7 +52,7 @@ p{
     color: #d12852;
     padding-top: 30px;
     width: 520px;
-    height: 550px;
+    height: 500px;
     background-color: #ffffffa2;
     border: solid #ffb4c7cb 3px;
     border-radius: 4px;
@@ -60,11 +61,13 @@ p{
 }
 
 .link{
+    display: flex;
     color: #ff7094;
     border: solid #ff7c9dbe 3px;
     border-radius: 4px;
-    margin: 40px 90px;
-    padding: 10px 0px;
+    margin: 30px 90px;
+    justify-content: center;
+    gap: 5px;
     font-size: 18px;
     box-shadow: 5px 5px #ffffffa2, 
     5px 6px 0 3px #ff7c9da1
@@ -74,14 +77,9 @@ p{
     width: 343px;
     height: 343px;
     position: absolute;
-    top: 600px;
+    top: 480px;
     right: 0px;
     z-index: -1;
-}
-
-#mencao{
-    margin: 20px;
-    margin-bottom: 5px;
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -90,7 +88,30 @@ p{
         z-index: -1;
         width: 300px;
         right: -20px;
+        top: 370px;
+    }
 
-}
+    h1{
+        font-size: 20px;
+    }
 
+    #links{
+        width: 420px;
+        height: 450px;
+    }
+
+    #cabecalho{
+        width: 271px;
+        height: 45px;
+    }
+
+    .link{
+        margin: 25px 90px;
+        font-size: 12px;
+    }
+
+    #mencao{
+        margin: 5px;
+        font-size: 12px;
+    }
 }
